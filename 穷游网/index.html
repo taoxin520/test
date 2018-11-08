@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+
+</head>
+<body>
+<div id="app" >
+    <!--导航栏、搜索栏-->
+    <!--导航栏-->
+    <div class="head-top">
+        <div>
+            <ul class="head-top1">
+                <li><a href="#">首页</a></li>
+                <li class="head_top1_li">
+                    <a href="#">机酒自由行</a>
+                    <div class="sanjiaoxing1"></div><!--三角形标志-->
+                    <ul class="head_top1_li_ul1">
+                        <li><a href="#">全部</a></li>
+                        <li><a href="#">自由行</a></li>
+                        <li><a href="#">特价机票</a></li>
+                        <li><a href="#">酒店</a></li>
+                        <li><a href="#">邮轮</a></li>
+                        <li><a href="#">马尔代夫</a></li>
+                    </ul>
+                </li><!--1-->
+                <li><a href="#">特价机票</a></li>
+                <li class="head_top1_li">
+                    <a href="#">跟团游</a>
+                    <div class="sanjiaoxing2"></div><!--三角形标志-->
+                    <ul class="head_top1_li_ul2">
+                        <li><a href="#">全部</a></li>
+                        <li><a href="#">跟团游</a></li>
+                        <li><a href="#">半自助游</a></li>
+                    </ul>
+                </li><!--2-->
+                <li><a href="#">酒店</a></li>
+                <li class="head_top1_li">
+                    <a href="#">当地玩乐</a>
+                    <div class="sanjiaoxing3"></div><!--三角形标志-->
+                    <ul class="head_top1_li_ul3">
+                        <li><a href="#">全部</a></li>
+                        <li><a href="#">日游小团</a></li>
+                        <li><a href="#">深度体验</a></li>
+                        <li><a href="#">门票票券</a></li>
+                        <li><a href="#">餐饮美食</a></li>
+                        <li><a href="#">WIFI电话卡</a></li>
+                        <li><a href="#">购物</a></li>
+                        <li><a href="#">交通票券</a></li>
+                        <li><a href="#">接送机包车</a></li>
+                        <li><a href="#">保险</a></li>
+                        <li><a href="#">欧洲铁路</a></li>
+                    </ul>
+                </li><!--3-->
+                <li><a href="#">海岛游</a></li>
+                <li><a href="#">邮轮</a></li>
+                <li><a href="#">租车自驾</a></li>
+                <li class="head_top1_li">
+                    <a href="#">深度旅行</a>
+                    <div class="sanjiaoxing4"></div><!--三角形标志-->
+                    <ul class="head_top1_li_ul4">
+                        <li><a href="#">全部</a></li>
+                        <li><a href="#">CityWalk</a></li>
+                        <li><a href="#">特色长线</a></li>
+                        <li><a href="#">Q-Home</a></li>
+                    </ul>
+                </li><!--4-->
+            </ul>
+            <ul class="head-top2">
+                <li><a href="#">签证<i>|</i></a></li>
+                <li><a href="#">保险<i>|</i></a></li>
+                <li><a href="#">WIFI电话卡</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--搜索栏-->
+    <div class="bottom">
+        <!--左边：穷游商城-->
+		<div>
+            <a href="#">穷游商城</a>
+        </div>
+        <!--中间搜索-->
+        <div>
+            <input type="text" placeholder="请输入目的地/产品名称" id="city_choose">
+            <img src="images/111.png" />
+        </div>
+        <div id="city_hide">
+            <div class="tip">温馨提示：可以直接输入城市的中文、英文来匹配检索</div>
+            <div class="tip1">热门目的地</div>
+            <div class="items_box">
+                <div class="items_title">日本</div>
+                <ul class="items">
+                    <li><a href="#">东京</a></li>
+                    <li><a href="#" style="color:red;">大阪</a></li>
+                    <li><a href="#">冲绳</a></li>
+                    <li><a href="#">北海道</a></li>
+                    <li><a href="#">名古屋</a></li>
+                    <li><a href="#">福冈</a></li>
+                    <li><a href="#">札幌</a></li>
+                </ul>
+            </div>
+            <div class="items_box">
+                <div class="items_title">泰国</div>
+                <ul class="items">
+                    <li><a href="#">曼谷</a></li>
+                    <li><a href="#" style="color:red;">普吉岛</a></li>
+                    <li><a href="#" style="color:red;">清迈</a></li>
+                    <li><a href="#">苏梅岛</a></li>
+                    <li><a href="#">甲米</a></li>
+                </ul>
+            </div>
+            <div class="items_box">
+                <div class="items_title">海岛</div>
+                <ul class="items">
+                    <li><a href="#">巴厘岛</a></li>
+                    <li><a href="#" style="color:red;">马尔代夫</a></li>
+                    <li><a href="#">塞班岛</a></li>
+                    <li><a href="#">芽庄</a></li>
+                    <li><a href="#">长滩岛</a></li>
+                    <li><a href="#">沙巴</a></li>
+                    <li><a href="#">帕劳</a></li>
+                    <li><a href="#">毛里求斯</a></li>
+                    <li><a href="#">塞舌尔</a></li>
+                    <li><a href="#">夏威夷</a></li>
+                    <li><a href="#">关岛</a></li>
+                </ul>
+            </div>
+            <div class="items_box">
+                <div class="items_title">港澳台</div>
+                <ul class="items">
+                    <li><a href="#" style="color:red;">香港</a></li>
+                    <li><a href="#">台湾</a></li>
+                    <li><a href="#">澳门</a></li>
+                </ul>
+            </div>
+            <div class="items_box">
+                <div class="items_title">亚洲</div>
+                <ul class="items">
+                    <li><a href="#">新加坡</a></li>
+                    <li><a href="#" style="color:red;">马来西亚</a></li>
+                    <li><a href="#" >越南</a></li>
+                    <li><a href="#" style="color:red;">柬埔寨</a></li>
+                    <li><a href="#">斯里兰卡</a></li>
+                    <li><a href="#">迪拜</a></li>
+                    <li><a href="#">尼泊尔</a></li>
+                </ul>
+            </div>
+            <div class="items_box">
+                <div class="items_title">欧洲</div>
+                <ul class="items">
+                    <li><a href="#">美国</a></li>
+                    <li><a href="#">法国</a></li>
+                    <li><a href="#" style="color:red;">西班牙</a></li>
+                    <li><a href="#">意大利</a></li>
+                    <li><a href="#" style="color:red;">英国</a></li>
+                    <li><a href="#">冰岛</a></li>
+                    <li><a href="#" style="color:red;">格鲁吉亚</a></li>
+                    <li><a href="#">德国</a></li>
+                    <li><a href="#">瑞士</a></li>
+                    <li><a href="#">加拿大</a></li>
+                    <li><a href="#">俄罗斯</a></li>
+                </ul>
+            </div>
+            <div class="items_box">
+                <div class="items_title">大洋洲</div>
+                <ul class="items">
+                    <li><a href="#" style="color:red;">澳大利亚</a></li>
+                    <li><a href="#">新西兰</a></li>
+                    <li><a href="#">大溪地</a></li>
+                    <li ><a href="#">斐济</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--右边：我的订单，我的收藏-->
+        <div>
+            <div>
+                <a href="#">
+                    <img src="images/112.png"/>
+                    <span>我的订单</span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="images/113.png"/>
+                    <span>我的收藏</span>
+                </a>
+            </div>
+        </div>
+        <!--轮播图-->
+        <div class="carousell">
+            <div id="slider">
+                <img src="images/banner01.jpg" class="show">
+                <img src="images/banner02.jpg"/>
+                <img src="images/banner03.jpg"/>
+            </div>
+            <div>
+                <img src="images/banner_top.png" alt=""/>
+            </div>
+            <div>
+                <ul>
+                    <li >
+                        <img src="images/20180821093719.png" />
+                        <div>
+                            <img src="images/20180821093845.png">
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/20180821102314.png" style="width:206px;height:53px"/>
+                        <div><img src="images/20180821102454.png"></div>
+                    </li>
+                    <li>
+                        <img src="images/20180821102546.png" style="width:206px;height:53px"/>
+                        <div><img src="images/20180821102602.png"></div>
+                    </li>
+                </ul>
+                <div class="carousel_bottom">
+                    <span><img src="images/nav_ico.png" style="margin-top:-3px;">目的地 &nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                    <div>
+                        <ul>
+                            <li><a href="#">中国</a></li>
+                            <li><a href="#">日本</a></li>
+                            <li><a href="#">泰国</a></li>
+                            <li><a href="#">法国</a></li>
+                            <li><a href="#">意大利</a></li>
+                            <li><a href="#">俄罗斯</a></li>
+                            <li><a href="#">摩洛哥</a></li>
+                            <li><a href="#">捷克</a></li>
+                            <li><a href="#">西班牙</a></li>
+                            <li><a href="#">印度</a></li>
+                            <li><a href="#">英国</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zhongjie"></div>
+    <!--独家日游-->
+    <div class="warp">
+            <h3>独家日游 <span>小团队，深度讲解，专业领队，像当地人一样旅行</span> </h3>
+                <!--上海、清迈、京东-->
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/600x400 (2).jpg" >
+                            <div class="boinfo_left">
+                                <h2><img src="images/walk-icon.png" alt=""/>上海&nbsp;| <span>CityWalk</span> </h2>
+                                <p>【City Walk夜游】苏州河–上海的母亲河</p>
+                            </div>
+                            <div class="details_left">
+                                <h6>【City Walk夜游】苏州河–上海的母亲河</h6>
+                                <p>城市的起点，生活的源头：顺流而下，洋气的外滩源和生活的石库门并非那么泾渭分明，他们的交融也正是海派文化诞生的缩影；装满故事的旧仓库：红砖下是荣氏家族成为中国第一民族资本家的奋斗史，粮仓里堆积着杜月笙成为“海上闻人”的辛秘，四行仓库还铭……</p>
+                                <p><span>138</span>元起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/600x400.jpg">
+                            <div class="boinfo_middle">
+                                <h2><img src="images/exp-icon.png" alt=""/>清迈&nbsp;| <span>美食</span> </h2>
+                                <p>泰国清迈一凡中文泰餐厨艺学校</p>
+                            </div>
+                            <div class="details_middle">
+                                <h6>泰国清迈一凡中文泰餐厨艺学校</h6>
+                                <p>泰奇妙，亲身体会泰北各种特异食材、香料泰真实，实物感知泰国传统农业、渔业工具；手作之美，亲手制作咖喱，感受各种香料融合到一起的魔幻；法餐仪式感，自己烹制的异域私厨，是深度了解泰国的定制......</p>
+                                <p><span>60</span>元起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/600x400 (1).jpg">
+                            <div class="boinfo_right">
+                                <h2><img src="images/walk-icon.png" alt=""/>京东&nbsp;| <span>CityWalk</span> </h2>
+                                <p>【最世界一日游】百年京都——禅意古都的维新之路</p>
+                            </div>
+                            <div class="details_right">
+                                <h6>【最世界一日游】百年京都——禅意古都的维新之路</h6>
+                                <p>带你去京都City Walk中小众的景点；聊一聊日本当年是如何从小渔村一跃赶超中国的；美丽的日式庭院背后，不讲不知道的小心思大揭秘</p>
+                                <p><span>768</span>元起</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+                <!--左右移动-->
+            <div class="picScroll">
+                <div class="rowup">
+                    <div class="picScroll_1">
+                        <div> <a href="#"><img src="images/20180830201342.png"></a></div>
+                        <div>
+                            <h4>大理</h4>
+                            <p>&nbsp;&nbsp;【最世界X野性中国】苍山之巅自然博物游......</p>
+                            <span>CityWalk</span>
+                        </div>
+                    </div>
+                    <div class="picScroll_2">
+                        <div><a href="#"><img src="images/20180830203734.png"></a></div>
+                        <div>
+                            <h4>罗马</h4>
+                            <p>&nbsp;&nbsp;【City Walk】凝聚了千年历史的罗马......</p>
+                            <span>CityWalk</span>
+                        </div>
+                    </div>
+                    <div class="picScroll_3">
+                        <div><a href="#"><img src="images/20180830204916.png"></a></div>
+                        <div>
+                            <h4>东京</h4>
+                            <p>&nbsp;&nbsp;【City Walk】日本桥—穿街走巷看东京......</p>
+                            <span>CityWalk</span>
+                        </div>
+                    </div>
+                    <div class="picScroll_4">
+                        <div> <a href="#"><img src="images/20180831140524.png"></a></div>
+                        <div>
+                            <h4>上海</h4>
+                            <p>&nbsp;&nbsp;【City Walk】漫步静安 – 十字街头......</p>
+                            <span>CityWalk</span>
+                        </div>
+                    </div>
+                    <div class="picScroll_5">
+                        <div><a href="#"><img src="images/20180831140542.png"></a></div>
+                        <div>
+                            <h4>京都</h4>
+                            <p>&nbsp;&nbsp;【City Walk】京都深度入门—探秘祇园东......</p>
+                            <span>CityWalk</span>
+                        </div>
+                    </div>
+                    <div class="picScroll_6">
+                        <div><a href="#"><img src="images/20180831140604.png"></a></div>
+                        <div>
+                            <h4>京都</h4>
+                            <p>&nbsp;&nbsp;【最世界一日游】将军之道—京都绝景......</p>
+                            <span>CityWalk</span>
+                        </div>
+                    </div>
+                    <div class="picScroll_7">
+                        <div><a href="#"><img src="images/20180831140634.png"></a></div>
+                        <div>
+                            <h4>巴黎</h4>
+                            <p>&nbsp;&nbsp;【City Walk】重新认识一座城--巴黎玛......</p>
+                            <span>CityWalk</span>
+                        </div>
+                    </div>
+                    <div class="picScroll_8">
+                        <div><a href="#"><img src="images/20180831140700.png"></a></div>
+                        <div>
+                            <h4>上海</h4>
+                            <p>&nbsp;&nbsp;【City Walk】武康路 – 老上海风情的缩影......</p>
+                            <span>CityWalk</span>
+                        </div>
+                    </div>
+                    <div class="picScroll_9">
+                        <div><a href="#"><img src="images/20180831140732.png"></a></div>
+                        <div>
+                            <h4>京都</h4>
+                            <p>&nbsp;&nbsp;【最世界一日游】京都岚山香风—竹林和......</p>
+                            <span>CityWalk</span>
+                        </div>
+                    </div>
+                    <div class="picScroll_10">
+                        <div><a href="#"><img src="images/20180831140804.png"></a></div>
+                        <div>
+                            <h4>北京</h4>
+                            <p>&nbsp;&nbsp;【City Walk】从大栅栏到杨梅竹斜街 ......</p>
+                            <span>CityWalk</span>
+                        </div>
+                    </div>
+                    <div class="picScroll_11">
+                        <div><a href="#"><img src="images/20180831140818.png"></a></div>
+                        <div>
+                            <h4>巴塞罗那</h4>
+                            <p>&nbsp;&nbsp;【City Walk】大村庄里的菜市场-巴塞罗......</p>
+                            <span>CityWalk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 <!--按钮-->
+            <div class="prev">
+                <img src="images/20180831144615.png">
+            </div>
+            <div class="next">
+                <img src="images/20180831144648.png">
+            </div>
+            <a href="#" class="more_btn">查看更多</a>
+    </div>
+    <!--特色长线-->
+    <div class="specialty">
+        <div>
+            <!--顶部文字-->
+            <h3>特色长线 <span>精品小团，资深领队，专业地接，与你一起重新发现世界</span></h3>
+            <!--中间大图可移动及文字-->
+            <div class="slid_specialty">
+                <div class="slid_specialty_1 NO1">
+                    <div>
+                        <a href="#">
+                            <img src="images/15355283113946.jpg">
+                        </a>
+                        <div>
+                            <img src="images/201808311853251.png" style="width:30px;height:30px;">
+                            <h3>印度｜<span>2019.02</span> </h3>
+                            <p>【最世界特色线路】不可思议的印度—终生难忘之旅</p>
+                        </div>
+                        <a href="#">立即出发</a>
+                    </div>
+                    <div>
+                        <img src="images/15355283712290.jpg">
+                        <img src="images/15355283787614.jpg">
+                        <img src="images/15355283888542.jpg">
+                    </div>
+                    <div>
+                        <h3>路线简介</h3>
+                        <p>世界上只有两种旅行者，去印度的和不去印度的。如果你已经决定要出发，来看看在我们的行程里你将获得什么</p>
+                    </div>
+                    <div>
+                        <img src="images/20180831202306.png" alt="">
+                        <h3>线路设计师：Onni</h3>
+                        <p>穷游网、GettyImage签约摄影师，曾走过30个国家200多座城市。在北印度旅行1个月后，精心设计了这样一条路线</p>
+                    </div>
+                </div>
+                <div class="slid_specialty_1 ">
+                    <div>
+                        <a href="#">
+                            <img src="images/15355269486881.jpg">
+                        </a>
+                        <div>
+                            <img src="images/201808311853251.png" style="width:30px;height:30px;">
+                            <h3>太原，平遥｜<span>2018.9</span> </h3>
+                            <p>【三晋】山西古代艺术深度游</p>
+                        </div>
+                        <a href="#">立即出发</a>
+                    </div>
+                    <div>
+                        <img src="images/15355269611408.jpg">
+                        <img src="images/15355269652601.jpg">
+                        <img src="images/15355269686356.jpg">
+                    </div>
+                    <div>
+                        <h3>路线简介</h3>
+                        <p>我国古代艺术的发展高度曲线，是以唐为高峰的抛物线。此行带领大家由浅入深了解中国古代建筑和彩塑</p>
+                    </div>
+                    <div>
+                        <img src="images/20180901105110.png">
+                        <h3>线路设计师：闫鑫</h3>
+                        <p>走遍山西300多处古建，被称为山西遗产的“活字典”，2015成为山西省最年轻五一劳动奖章获得者</p>
+                    </div>
+                </div>
+                <div class="slid_specialty_1 NO2">
+                    <div>
+                        <a href="#">
+                            <img src="images/15356215071110.jpg">
+                        </a>
+                        <div>
+                            <img src="images/201808311853251.png" style="width:30px;height:30px;">
+                            <h3>清迈｜<span>2018-2019</span> </h3>
+                            <p>小长假黄金首选清迈亲子游</p>
+                        </div>
+                        <a href="#">立即出发</a>
+                    </div>
+                    <div>
+                        <img src="images/15356214936249.jpg">
+                        <img src="images/15356214955937.jpg">
+                        <img src="images/15356214988115.jpg">
+                    </div>
+                    <div>
+                        <h3>路线简介</h3>
+                        <p>下厨学泰餐，熊孩子喊爸爸妈妈，回家吃饭啦！</p>
+                    </div>
+                    <div>
+                        <img src="images/20180901105733.png" alt="">
+                        <h3>线路设计师：一凡</h3>
+                        <p>十余年独立背包客，民间独立领队，累计策划、带队200余次，队员人数5000+；最世界清迈厨艺学校校长及高级旅行规划师。</p>
+                    </div>
+                </div>
+            </div>
+            <!--左按钮-->
+            <div class="slid_specialty_left">
+                <div class="text_left"><span>印度，不可思议</span></div>
+                <div class="text_prev"><img src="images/返回.png" style="width:23px;height:23px;"></div>
+            </div>
+            <!--右按钮-->
+            <div class="slid_specialty_right">
+                <div class="text_right"><span>清迈，如果再回到童年</span></div>
+                <div class="text_next"><img src="images/更多.png" style="width:23px;height:23px;"></div>
+            </div>
+            <!--特色长线最底部跟随鼠标感应悬浮动画-->
+            <div class="bontain">
+                <ul>
+                    <li>
+                        <a class="normal" href="#">
+                            <img src="images/275x185 (2).jpg">
+                        </a>
+                        <div class="info">
+                            <h3>泰国</h3>
+                            <p>【最世界特色线路】小长假黄金首选清迈亲子游—如果再回到童年</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="normal" href="#">
+                            <img src="images/275x185 (1).jpg">
+                        </a>
+                        <div class="info">
+                            <h3>马来西亚</h3>
+                            <p>【亲子博物】博物学家带队婆罗洲Borneo雨林探秘之旅</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="normal" href="#">
+                            <img src="images/275x185.jpg">
+                        </a>
+                        <div class='info'>
+                            <h3>肯尼亚</h3>
+                            <p>【亲子博物】博物专家带队肯尼亚野生动物9天8晚奇幻之旅</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="normal" href="#">
+                            <img src="images/275x185 (3).jpg">
+                        </a>
+                        <div class="info">
+                            <h3>摩洛哥</h3>
+                            <p>【穷游特色线路】北非奇幻之旅—穿越摩洛哥一千零一夜</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--他们，带你踏上精彩旅程！-->
+    <div class="document">
+        <img src="images/conent_03_bg.png"/>
+        <h3>他们，带你踏上精彩旅程！</h3>
+        <p>我们的线路，来源于专业设计师一次次出发探路、一点点细节磨合。<br>
+            他们不仅是旅行经验丰富的超级玩咖，更擅长设计出满足国人旅行偏好和需求的线路。</p>
+        <p>此外，我们的专业领队不仅热爱和熟知当地，同时非常善于分享。<br>
+            在严格的筛选和培养体系下，每一位领队都能为你带来全方位的讲解和细致服务。</p>
+        <p>和他们出发，遇见有趣更有料的旅行。</p>
+    </div>
+    <!--Q-Home-->
+    <div class="qHome">
+        <h3>Q-Home
+            <span>在有趣的地方，和有趣的人相遇</span>
+        </h3>
+        <div class="slide_fill_bd">
+                <!--第一个-->
+                <div class="box active" id="my-order">
+                    <img src="images/chiangmai_bg.jpg" class="slide_fill_li">
+                    <div class="slide_fill_div">
+                        <a href="#"><img src="images/chiangmai_home.jpg" class="slide_fill_left" ></a>
+                        <div class="slide_fill_right">
+                            <h3>清迈 Q-Home</h3>
+                            <p>清迈Q-Home坐落于古城清迈西南角一栋奶黄色殖民风格的花园洋楼。在这里你可以了解最全的泰北旅行资讯，也可以参加厨艺学校、泰北手工、亲子游等特色活动体验本地风情，夜晚还可以留宿在Q-House。</p>
+                            <div>
+                                <a href="#">
+                                    <img src="images/600x240 (2).jpg">
+                                    <div>	<span>泰国清迈一凡中文泰餐厨艺学校</span></div>
+                                    <div class="slide_fill_right_top">
+                                        <h6>泰国清迈一凡中文泰餐厨艺学校</h6>
+                                        <span>已售：2315</span>
+                                        <p><span>60</span>元起</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="images/600x240.jpg">
+                                    <div><span>【秒杀】【原生态象营】泰国清迈KerChor大象生态公园 (中文服务,体验象夫生活,照顾象宝宝)</span></div>
+                                    <div class="slide_fill_right_bottom">
+                                        <h6>【秒杀】【原生态象营】泰国清迈KerChor大象生态公园 (中文服务,体验象夫生活,照顾象宝宝)</h6>
+                                        <p><span>189</span>元起</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--第二个-->
+                <div class="box" id="user-setting">
+                    <img src="images/kyoto_bg.jpg" class="slide_fill_li">
+                    <div class="slide_fill_div">
+                        <a href="#"><img src="images/kyoto_home.jpg" class="slide_fill_left" ></a>
+                        <div class="slide_fill_right">
+                            <h3>京都 Q-Home</h3>
+                            <p>位于花见小路北段的京都Q-Home是旅行者的大本营。这里拥有13名具备双语能力的中日员工，提供旅行咨询、和服体验、线路及米其林餐厅预订等不同服务，全中文的服务环境让你即使身在他乡也不会觉得孤独。</p>
+                            <div>
+                                <a href="#">
+                                    <img src="images/600x240 (3).jpg">
+                                    <div>	<span>【穷游Q-Home体验】日本京都祇园日式茶道</span></div>
+                                    <div class="slide_fill_right_top">
+                                        <h6>【穷游Q-Home体验】日本京都祇园日式茶道</h6>
+                                        <span>已售：312</span>
+                                        <p><span>20</span>元起</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="images/600x240 (1).jpg">
+                                    <div><span>【8月30秒杀】【穷游Q-Home】日本京都祇园花见和服体验</span></div>
+                                    <div class="slide_fill_right_bottom">
+                                        <h6>【8月30秒杀】【穷游Q-Home】日本京都祇园花见和服体验</h6>
+                                        <p><span>210</span>元起</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--第三个-->
+                <div class="box" id="account-security">
+                    <img src="images/queenstown_bg.jpg" class="slide_fill_li">
+                    <div class="slide_fill_div">
+                        <a href="#"><img src="images/queenstown_home.jpg" class="slide_fill_left" ></a>
+                        <div class="slide_fill_right">
+                            <h3>皇后镇 Q-Home</h3>
+                            <p>美丽的瓦卡提普湖边是穷游在海外的第三个Q-Home，除了专业中文预订、行程定制服务外，这儿更是旅行者的家。你可以和不同朋友畅谈旅行经历，一起看新西兰本土电影，还能参与到当地人的独特活动项目。</p>
+                            <div>
+                                <a href="#">
+                                    <img src="images/600x240 (4).jpg">
+                                    <div>	<span>皇后镇的后花园，魔戒取景地一日游</span></div>
+                                    <div class="slide_fill_right_top">
+                                        <h6>皇后镇的后花园，魔戒取景地一日游</h6>
+                                        <span>已售：8</span>
+                                        <p><span>750</span>元起</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="images/600x240 (5).jpg">
+                                    <div><span>【高空挑战】新西兰皇后镇NZONE高空跳伞(高度可选)</span></div>
+                                    <div class="slide_fill_right_bottom">
+                                        <h6>【高空挑战】新西兰皇后镇NZONE高空跳伞(高度可选)</h6>
+                                        <p><span>1282</span>元起</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--触发事件自动按钮-->
+        <div class="hd">
+                <ul>
+                    <li class="active"><a data-toggle="item" href="#my-order">清迈</a></li>
+                    <li><a data-toggle="item" href="#user-setting">京都</a></li>
+                    <li><a data-toggle="item" href="#account-security">皇后镇</a></li>
+                </ul>
+            </div>
+    </div>
+    <!--文化创意-->
+    <div class="cultrue">
+        <div>
+            <h3>文化创意</h3>
+            <p>记录旅行的深度，广度，温度</p>
+        </div>
+        <div>
+            <img src="images/20180903194846.png">
+            <div>
+                <h4>穷游最世界书系-京都漫步</h4>
+                <!--轮播图-->
+                <div id="demo" class="carousel" data-ride="carousel"  data-interval="1000">
+                    <!--指示器-->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <!--轮播图片-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/mook01.jpg" >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/mook02.jpg"  >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/mook03.jpg" >
+                        </div>
+                    </div>
+                </div>
+                <p>穷游最世界出品，深度、美感、实用兼备的权威京都旅行书，特邀本地知名作家撰稿，带你像当地人一样旅行。带上书漫步京都街头，寻访名寺、名匠、名吃、名物，一年四季，随时随地发现京都的美。</p>
+            </div>
+            <a href="#" class="cultrue_btn">查看更多</a>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <img src="images/original_tag.png">
+                    <h3>他徒手爬上垂直岩壁，骗过了死神</h3>
+                    <p>作者： 闵保章、骆仪</p>
+                    <a href="#">立即阅读</a>
+                </li>
+                <li>
+                    <img src="images/original_tag.png">
+                    <h3>500天的间隔旅行结束后，我们得到了什么？</h3>
+                    <p>作者：马里奥</p>
+                    <a href="#">立即阅读</a>
+                </li>
+                <li>
+                    <img src="images/z_code.png">
+                    <h3>最世界公众号</h3>
+                    <p>这里有热门目的地的深度玩法
+                        也带你发掘有趣的小众目的地
+                        扫描关注最世界
+                        从此玩得跟别人不一样！</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--图片-->
+    <div class="foot_img"></div>
+    <!--机酒自由行、当地玩乐、....、深度旅行-->
+    <div class="sVgRG">
+        <div>
+            <ul>
+                <li><a href="#">机酒自由行</a></li>
+                <li><a href="#">当地玩乐</a></li>
+                <li><a href="#">特价机票</a></li>
+                <li><a href="#">签证</a></li>
+                <li><a href="#">马尔代夫</a></li>
+                <li><a href="#">邮轮</a></li>
+                <li><a href="#">租车自驾</a></li>
+                <li><a href="#">限时特卖</a></li>
+                <li><a href="#">深度旅行</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="images/20180904150808.png">
+                    <h3>专业保证</h3>
+                    <p>我们收集穷游er的真实诉求，也找寻全世界最独特的旅行目的地，让更多的穷游er轻松出行</p>
+                </li>
+                <li>
+                    <img src="images/20180904150844.png">
+                    <h3>多重审核</h3>
+                    <p>对旅游产品供应商严格筛选，资质认证层层把关，为穷游er精挑细选最值得信赖的旅行产品</p>
+                </li>
+                <li>
+                    <img src="images/20180904150901.png">
+                    <h3>安心陪护</h3>
+                    <p>对所有穷游er的购买进行跟踪服务以及质量监控，有效投诉先行赔付，出现任何问题负责到底</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--右下角固定导航栏-->
+    <!-- <div class="guding">
+        <div id="guding_div1">
+            <img src="images/20180911172531.png"/>
+            <span class="title">返回顶部</span>
+        </div>
+       <div id="guding_div2">
+            <img src="images/20180911172722.png"/>
+            <span class="title">我的订单</span>
+        </div>
+        <div id="guding_div3">
+            <img src="images/20180911172736.png"/>
+            <span class="title">我的收藏</span>
+        </div>
+        <div id="guding_div4">
+            <img src="images/20180911172752.png"/>
+            <span class="title">手机立减</span>
+        </div>
+    </div>-->
+    <!--页尾-->
+    <div class="footer">
+        <div>
+            <p>穷游商城</p>
+            <p>从一张机票、一家酒店的订购，到一次暖心的接机服务、一张轻松融入当地的交通卡，让我们带你探索这个世界</p>
+            <div class="footer_images">
+                <span>关注我们</span>
+                <ul><!--微信/微博/短信-->
+                    <li><img src="images/微信.png" class="img1"></li>
+                    <li><img src="images/微博.png" class="img2"></li>
+                    <li><img src="images/短信.png"></li>
+                </ul>
+                <!--微信-->
+                <div class="foot_hide1">
+                    <div></div>
+                    <img src="images/foot-qrcode-weixin.png">
+                    <p>扫一扫关注</p>
+                    <p>穷游折扣</p>
+                    <p>微信</p>
+                </div>
+                <!--微博-->
+                <div class="foot_hide2">
+                    <div></div>
+                    <img src="images/二维码 (2).png">
+                    <p>扫一扫关注</p>
+                    <p>穷游折扣</p>
+                    <p>微博</p>
+                </div>
+                <!--短信-->
+            </div>
+        </div>
+        <div>
+            <div>
+                <a href="#">关于穷游商城</a>
+                <span>|</span>
+                <a href="#">服务与隐私</a>
+                <span>|</span>
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">旅游度假资质</a>
+                <span>|</span>
+                <a href="#">营业执照</a>
+                <span>|</span>
+                <a href="#">投诉建议</a>
+            </div>
+            <div>2004-2018©穷游网™qyer.com&nbsp;All&nbsp;rights&nbsp;reserved.&nbsp;Version&nbsp;v5.57&nbsp;京ICP备12003524号&nbsp;京公网安备11010502023470 京ICP证140673号</div>
+            <p>友情链接：</p>
+            <div>
+                <p style="width:65px;height:40px;">立刻扫描下载APP</p>
+                <img src="images/foot-qrcode-qapp.png">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/myindex.js"></script>
+<script>
+    /*右下角返回顶部*/
+  $("#guding_div1").click(function(){
+        $("html,body").animate({scrollTop:"0px"},5000);
+    });
+  /*城市搜索框显示隐藏*/
+  $("#city_choose").focus(function(){
+      $("#city_hide").css("display","block").on("click","a",function(){
+          var $tar=$(this);
+          var c=$tar.html();
+          $("#city_choose").val(c)
+      })
+  })
+          .blur(function(){
+              setTimeout(function(){
+                  $("#city_hide").css("display","none")
+              },200)
+   })
+</script>
+
+</body>
+</html>
