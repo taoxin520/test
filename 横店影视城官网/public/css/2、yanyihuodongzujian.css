@@ -1,0 +1,163 @@
+body{  padding: 0;  margin:0;  }
+/*======================================================================================================================================*/
+/*头部*/
+.top{background:#EDEFDC;min-width: 1500px;}
+.top1{
+    width: 1000px;
+    height:140px;
+    background:url("../images/top_bg.jpg") no-repeat  center;
+    margin:0 auto;  position: relative;white-space: nowrap;
+}
+.top1>div:first-child>a>img{width:245px;
+    height: 54px;
+    position: absolute;
+    top: 33px;
+}
+.top1>div:nth-child(2){ width:250px;  height:130px;
+    margin-left:500px; }
+.top1>div:nth-child(2)>input{  width:144px;  height:27px;
+    margin:86px 0 0 37px;
+    font-size: 12px;
+    padding:7px;
+}
+.top1>div:nth-child(2)>p{  display: inline-block;
+    width:70px;  height:27px;  color:white;
+    background:#CF7D57;
+    cursor: pointer;
+    text-align: center;
+    line-height: 27px;
+    margin-left: -6px; }
+.top1>div:last-child{width:200px;height: 20px;
+    position: absolute;top:90px;left:802px;
+    overflow: hidden;
+}
+.top>.top1>div:last-child>ul>li{
+    list-style: none;
+    float:left;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.top>.top1>div:last-child>ul{
+    display: inline-block;
+    white-space: nowrap;
+}
+.top>.top1>div:last-child>ul>li>a{color:#CF7D57;text-decoration: none;}
+
+.top2{background:#d14f42; width: 100%;min-width: 1500px;}
+.top2 ul li{
+    display:inline-block;
+    margin-left:-5px;
+}
+.top2 ul li a{color: #eee5d4;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    background: url("../images/topnav_bg.png") no-repeat center;
+}
+.top2 ul li a:hover{ background:#888888;}
+.top3{
+    width: 1000px;
+    margin:0 auto;
+    white-space: nowrap;
+}
+/*======================================================================================================================================*/
+/*主体部分*/
+.jqshowTit{margin: -1px  auto;
+    height: 650px;
+    width: 100%;
+    min-width:1500px;
+    background: url(../images/yanyihuodongzujian/showbg.jpg) no-repeat top center;
+}
+.jqshow1{padding-top: 30px;position:relative;height:560px;width:1000px;margin:0 auto;z-index:0;}
+.jqname{background: url(../images/yanyihuodongzujian/showtopbg.png) no-repeat center;
+    height: 33px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #4B4848;
+    text-align: center;
+}
+/*左边文字及右边图片自动换*/
+.jqshowcontain{width:1000px; height: 516px;
+    background-color: #FFF;
+    padding-top: 10px;
+    margin:0 auto;
+    position:relative;
+}
+.jqshownav{display: block;width: 60px;float: left;height: 480px;}
+.jqshownav span{
+    background-image: url(../images/yanyihuodongzujian/showtabbg.png);
+    width: 52px;
+    height: 117px;
+    display: block;
+    font-size: 16px;
+    color: #FFF;
+    margin-bottom: 4px;  }
+.jqshownav span a{width: 23px;
+    display: block;
+    color: #fff;
+    margin-left: 18px;
+    padding-top: 19px;
+    line-height: 18px;
+    text-decoration:none;
+}
+.jqshownav .active,.jqshownav>span:hover{background-image: url(../images/yanyihuodongzujian/showtopbgR.png);
+    width: 61px;
+    height: 117px;
+    display: block;
+    margin-bottom: 4px;
+}
+.flexslider,.jqshowcontain{display: none;}
+.active1,.grod{display: block;}
+div#slider>img,div#slider1>img,div#slider2>img,div#slider3>img,
+div#slider4>img,div#slider5>img,div#slider6>img,div#slider7>img,
+div#slider8>img,div#slider9>img,div#slider10>img,div#slider11>img,
+div#slider12>img,div#slider13>img,div#slider14>img,div#slider15>img,
+div#slider16>img,div#slider17>img,div#slider18>img,div#slider19>img,
+div#slider20>img,div#slider21>img
+{position:absolute;top:11px;left:62px;transition: all 0.5s linear;width:934px;height:479px;}
+#slider>img.show,#slider1>img.show,#slider2>img.show,#slider3>img.show,
+#slider4>img.show,#slider5>img.show,#slider6>img.show,#slider7>img.show,
+#slider8>img.show,#slider9>img.show,#slider10>img.show,#slider11>img.show,
+#slider12>img.show,#slider13>img.show,#slider14>img.show,#slider15>img.show,
+#slider16>img.show,#slider17>img.show,#slider18>img.show,#slider19>img.show,
+#slider20>img.show,#slider21>img.show
+{opacity:1;z-index:3;}
+/*左边文字及右边图片自动换结束*/
+
+/*梦幻谷景区、秦王宫景区、清明上河图景区。。。。明清民居博览城景区*/
+.jqmenu{width: 1000px;
+    height: 50px;
+    background: url(../images/yanyihuodongzujian/BG.png) no-repeat;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    z-index:1;}
+.jqmenu>span{display: block; padding-top: 12px;}
+.jqmenu>span>a{text-decoration: none;font-size: 12px;color: #FFF;}
+.jqmenu>span>a:not(:last-child){border-right:1px solid #fff;margin:-2px;padding:3px;}
+.jqmenu>span>a.cur,.jqmenu>span>a:hover{color: #f39b00;font-size: 12px;}
+div#gold2{position:absolute;top:63px;left:0;}
+/*======================================================================================================================================*/
+/*底部部分*/
+.cont_two{width:1000px;height:100px;margin:15px auto;}
+.cont_two>div:first-child{width:605px;height:35px;margin:0 auto; }
+.cont_two>div:nth-child(2){ font-size: 12px;color: #666;width:1000px;height:35px;text-align: center;margin-top: 20px;}
+.cont_two a{    width: 100px;
+    height: 30px;
+    display: block;
+    float: left;
+    background: url(../images/yanyihuodong/ico.png) no-repeat 0 -163px;
+    color: #FFF;
+    line-height: 28px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+}
+.cont_two a:hover{ background: url(../images/yanyihuodong/ico.png) no-repeat 0 -197px;}

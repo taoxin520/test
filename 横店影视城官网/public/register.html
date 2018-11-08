@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+		<script src="js/vue.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css">
+
+    <style>
+        body{
+            text-align:center;
+            background:#f5f7fa;
+        }
+        #container{
+            background:#fff;
+            opacity:0.8;
+            padding:30px 0;
+            width:600px;
+            margin:120px auto;
+        }
+        input{
+            padding:3px 15px;
+            margin-top:10px;
+            outline-style:none;
+            border-radius: 5px;
+            border:1px solid #ddd;
+        }
+        #btn{
+            border:none;
+            cursor:pointer;
+            padding:10px 130px;
+            margin-top:30px;
+        }
+        div.line{
+            border-bottom:1px solid #ddd;
+            margin-bottom:30px;
+        }
+        ul>li{
+            margin-bottom:10px;
+						position:relative;
+        }
+        ul>li.L2{
+            padding-right:139px;
+        }
+        li>span{
+            position:relative;
+        }
+        li>span>img{
+            position:absolute;
+            left:0;
+        }
+				ul li span img{
+          position:absolute;
+          left:0;
+					top:-12px;
+        }
+				ul>li:nth-child(5)>span>img{
+				   position:absolute;
+          left:0;
+					top:7px;}
+				ul>li:nth-child(2){margin-left:22px;}
+				ul>li.li_NO7{
+					margin-left:-247px;
+				}
+				.btn_L2{
+					background:red;
+				}
+				video{
+					position:fixed;
+					right:0;
+					bottom:0;
+					min-width:1500px;
+					min-height:100%;
+					z-index:-9999;
+					width:auto;
+					height:auto;
+				}
+    </style>
+</head>
+<body>
+<div >
+    
+    <div id="container">
+        <h2>会员注册</h2>
+        <div class="line"></div>
+				<form method="get" action="/register/register">
+        <ul style="list-style:none">
+            <li>
+                &nbsp;&nbsp;&nbsp;&nbsp;用户名：<input type="text" placeholder="请输入用户名"  id="uname"/><!--required  autofocus-->
+								<span style="font-size:14px;color:red; width:144px; display:inline-block"></span>
+            </li>
+            <li>
+                &nbsp;&nbsp;&nbsp;密码：<input type="text" placeholder="请输入密码" value="" id="upwd"/>
+                <span style="font-size:14px;color:red;width:144px; display:inline-block"></span>
+            </li>
+            <li>
+                确认密码：<input type="password" placeholder="请再次输入密码" id="upwd1"/>
+                <span style="font-size:14px;width:144px; display:inline-block"></span>
+            </li>
+            <li>
+                电子邮件：<input type="email" placeholder="请输入电子邮件" multiple id="email" name="email"/>
+                <span style="font-size:14px;color:red;width:144px; display:inline-block;" ></span>
+            </li>
+            <li>
+                联系方式：<input type="text" placeholder="请输入手机号" id="phone"/>
+                <span style="font-size:14px;width:144px;color:red; height:20px;display:inline-block"></span>
+            </li>
+						<li class="li_NO7">
+							<input type="checkbox" v-model="agree" id="btn1">我同意本站的使用条款
+						</li>
+            <li class="L2">
+							<button :disabled="!agree" @click.prevent="login()" id="btn" style="color:#fff;">注册</button>
+            </li>
+        </ul>
+				</form>
+    </div>
+		<video autoplay loop style="width:100%;">
+		     <source src="1526974.mp4">
+		</video>
+</div>
+
+<script src="js/register.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="register_vue.js"></script>
+
+
+<script>
+    $("#btn").click(function(){
+        $.ajax({
+            type:'GET',
+            url:'"http://localhost:3000/index.html"',
+            data:{uname:$('#uname').val(),upwd:$('#upwd').val(),email:$('#email').val(),phone:$('#phone').val()},
+            success:function(data){
+                var a=data.code;
+                if(a==200){
+                    alert("注册成功！3秒后跳转到登陆页面");
+					setTimeout(function(){
+						location.href="http://localhost:3000/register1.html";
+					},3000);
+                }
+            }
+        });
+    });
+		$("#btn1").click(function(){
+			$("#btn").toggleClass("btn_L2");
+		})
+	//用户名验证
+	$("#uname").blur(function(){
+		var uname=$("#uname").val();
+		var regUname=/^\w{3,10}$/;
+		if(!uname){
+			$("#uname").siblings("span").show().text("请输入您的用户名");
+			return false;
+		}else if(!regUname.test(uname)){
+			$("#uname").siblings("span").show().text("3至10位字母或数字");
+			return false;
+		}else{
+			 $("#uname").siblings("span").show().html("<img src='images/ok.png'>");
+        return true;
+		}
+	})
+	//密码验证
+
+	$("#upwd").blur(function(){
+		var upwd=$("#upwd").val();
+		var regUpwd=/^\d{6,12}$/;
+		if(!upwd){
+			$("#upwd").siblings("span").show().text("请输入您的密码");
+			return false;
+		}else if(!regUpwd.test(upwd)){
+			$("#upwd").siblings("span").show().text("6至12位字符的数字");
+			return false;
+		}else{
+			 $("#upwd").siblings("span").show().html("<img src='images/ok.png'>");
+        return true;
+		}
+	})
+	//确定密码验证
+	/*$("#upw1").blur(function(){
+		var upwd=$("#upwd").val();
+		var upwd1=$("#upwd1").val();
+		if(upwd1!=upwd){
+			$("#upwd1").siblings("span").show().text("两次输入的密码不一致");
+		}else{
+			$("#upwd1").siblings("span").show().html("<img src='images/ok.png'>");
+		}
+})*/
+	//验证邮箱
+	$("#email").blur(function(){
+		var email= $.trim($("#email").val());
+    var regEmail= /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+    if(!email){//邮箱为空时
+        $("#email").siblings("span").show().text("请输入您的注册邮箱");
+        return false;
+    }else if(!regEmail.test(email)){
+        $("#email").siblings("span").show().text("请输入正确的邮箱格式");
+        return false;
+    }else{
+        $("#email").siblings("span").show().html("<img src='images/ok.png'>");
+        return true;
+    }
+	});
+	//验证手机
+		$("#phone").blur(function(){
+		var phone= $.trim($("#phone").val());
+    var regPhone= /^(13[0-9]|15[0-9]|18[0-9]])\d{8}$/;
+    if(!phone){//邮箱为空时
+        $("#phone").siblings("span").show().text("请输入您的手机号码");
+        return false;
+    }else if(!regPhone.test(phone)){
+        $("#phone").siblings("span").show().text("请输入正确的手机号码");
+        return false;
+    }else{
+        $("#phone").siblings("span").show().html("<img src='images/ok.png'>");
+        return true;
+    }
+	});
+</script>
+</body>
+</html>

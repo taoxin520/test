@@ -1,0 +1,128 @@
+body{  padding: 0;  margin:0; background-color: #EDEFDC; }
+/*======================================================================================================================================*/
+/*头部*/
+.top{background:#EDEFDC;min-width: 1500px;}
+.top1{
+    width: 1000px;
+    height:140px;
+    background:url("../images/top_bg.jpg") no-repeat  center;
+    margin:0 auto;  position: relative;white-space: nowrap;
+}
+.top1>div:first-child>a>img{width:245px;
+    height: 54px;
+    position: absolute;
+    top: 33px;
+}
+.top1>div:nth-child(2){ width:250px;  height:130px;
+    margin-left:500px; }
+.top1>div:nth-child(2)>input{  width:144px;  height:27px;
+    margin:86px 0 0 37px;
+    font-size: 12px;
+    padding:7px;
+}
+.top1>div:nth-child(2)>p{  display: inline-block;
+    width:70px;  height:27px;  color:white;
+    background:#CF7D57;
+    cursor: pointer;
+    text-align: center;
+    line-height: 27px;
+    margin-left: -6px; }
+.top1>div:last-child{width:200px;height: 20px;
+    position: absolute;top:90px;left:802px;
+    overflow: hidden;
+}
+.top>.top1>div:last-child>ul>li{
+    list-style: none;
+    float:left;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.top>.top1>div:last-child>ul{
+    display: inline-block;
+    white-space: nowrap;
+}
+.top>.top1>div:last-child>ul>li>a{color:#CF7D57;text-decoration: none;}
+
+.top2{background:#d14f42; width: 100%;min-width: 1500px;}
+.top2 ul li{
+    display:inline-block;
+    margin-left:-5px;
+}
+.top2 ul li a{color: #eee5d4;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    background: url("../images/topnav_bg.png") no-repeat center;
+}
+.top2 ul li a:hover{ background:#888888;}
+.top3{
+    width: 1000px;
+    margin:0 auto;
+    white-space: nowrap;
+}
+/*======================================================================================================================================*/
+/*主体部分*/
+.tbg{min-width: 1500px;width:100%;height:150px;}
+.e_tbg{background: url(../images/e_all_tbg.png) ; min-width: 1500px;height:150px;position: relative;}
+.youke{margin:0 auto;width:956px; }
+.header_youke{width:87px;float:left;margin:19px 16px;}
+.header_youke a{text-decoration: none; color: #fff;font-size: 14px;}
+.header_youke_font{margin-left:17px;}
+.header_youke_pic1{background: url(../images/e_all_tico.png) no-repeat 2px 0;height: 86px;}
+.header_youke_pic2{background: url(../images/e_all_tico.png) no-repeat -171px 0;height: 86px;}
+.header_youke_pic3{background: url(../images/e_all_tico.png) no-repeat -85px 0;height: 86px;}
+.header_youke_pic4{background: url(../images/e_all_tico.png) no-repeat -430px 0;height: 86px;}
+.header_youke_pic5{background: url(../images/srdz.png) no-repeat 0 0;height: 86px;}
+.header_youke_pic6{background: url(../images/lvsp.png) no-repeat 0 0;height: 86px;}
+.header_youke_pic7{background: url(../images/e_all_tico.png) no-repeat -257px 0;height: 86px;}
+.header_youke_pic7_xin{background: url(../images/e_all_tico.png) no-repeat -257px -87px;height: 86px;}
+.header_youke_pic8{background: url(../images/e_all_tico.png) no-repeat -343px 0;height: 86px;}
+.header_youke_pic8_xin{background: url(../images/e_all_tico.png) no-repeat -343px -87px;height: 86px;}
+.ebg{  width:1000px;margin:20px auto;height:540px; min-width: 1500px;position: relative;}
+.ebg_a,.ebg_a_1{width:931px;height: 520px;background-image: url("../images/loginbg.jpg");position: absolute;}
+.ebg_a{top:10px;left:19%;}
+.ebg_a_1{top:10px;left:19%;}
+.box{display: none;}
+.box.active{display: block;}
+.ebg_b>p{color: #c34d4d;  font-size: 16px;  font-weight: bold;padding:10px 20px;}
+.ebg_b>hr{border:0;height:2px;background-color: #c34d4d;width:855px;margin:-20px 0 0 20px;}
+.ebg_c{width:350px;height:325px;border:1px  solid #CCC ;position: absolute;bottom:100px;right:60px;font-size: 12px;}
+.ebg_c>p{color: #000;    font-weight: bold;padding:5px 10px;}
+.ebg_c>hr{height:1px;background-color: #c0c0c0;margin-top:-11px}
+.ebg_c_div1{height:40px;margin-left:20px;margin-top:39px;}
+.ebg_c_div2{height:40px;margin-left:20px;margin-top:18px;}
+.ebg_c_div3{height:40px;margin-left:40px;margin-top:25px;}
+.ebg_c_div4{height:40px;margin-left:38px;margin-top:7px;}
+.ebg_c_div5{height:40px;margin-left:27px;margin-top:7px;}
+.ebg_c input#biaodan1{position: absolute;top:72px;left:115px;border-radius:5px;outline: none;padding-left:5px; width:154px;height:28px;}
+.ebg_c input#biaodan2{position: absolute;top:132px;left:115px;border-radius:5px;outline: none; padding-left:5px;width:154px;height:28px;}
+#biaodan3{position: absolute;top:60px;left:110px;border-radius:5px;outline: none;padding-left:5px; width:154px;height:28px;}
+#biaodan4{position: absolute;top:106px;left:110px;border-radius:5px;outline: none; padding-left:5px;width:154px;height:28px;}
+#biaodan5{position: absolute;top:153px;left:110px;border-radius:5px;outline: none; padding-left:5px;width:74px;height:28px;}
+.ebg_c>div:last-child{width:100px;height:32px;background-color: #d9534f;display: block;line-height: 32px;text-align: center;
+border-radius: 5px;margin:25px auto;color:#fff;cursor: pointer;}
+.ebg_c>div:last-child:hover{background-color:#d43f3a;}
+.ebg_c_div6{width:205px;height:30px;margin-left:44px;font-size: 12px;color:#000;}
+.ebg_c_div6>a{text-decoration: none;color:#000;}
+/*======================================================================================================================================*/
+/*底部部分*/
+.cont_two{width:1000px;height:100px;margin:15px auto;}
+.cont_two>div:first-child{width:605px;height:35px;margin:0 auto; }
+.cont_two>div:nth-child(2){ font-size: 12px;color: #666;width:1000px;height:35px;text-align: center;margin-top: 20px;}
+.cont_two a{    width: 100px;
+    height: 30px;
+    display: block;
+    float: left;
+    background: url(../images/yanyihuodong/ico.png) no-repeat 0 -163px;
+    color: #FFF;
+    line-height: 28px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+}
+.cont_two a:hover{ background: url(../images/yanyihuodong/ico.png) no-repeat 0 -197px;}

@@ -1,0 +1,200 @@
+body{  padding: 0;  margin:0;  }
+#main{ min-width: 1500px; }
+/*======================================================================================================================================*/
+/*头部*/
+.top{background:#EDEFDC;min-width: 1500px;}
+.top1{
+    width: 1000px;
+    height:140px;
+    background:url("../images/top_bg.jpg") no-repeat  center;
+    margin:0 auto;  position: relative;white-space: nowrap;
+}
+.top1>div:first-child>a>img{width:245px;
+    height: 54px;
+    position: absolute;
+    top: 33px;
+}
+.top1>div:nth-child(2){ width:250px;  height:130px;
+    margin-left:500px; }
+.top1>div:nth-child(2)>input{  width:144px;  height:27px;
+    margin:86px 0 0 37px;
+    font-size: 12px;
+    padding:7px;
+}
+.top1>div:nth-child(2)>p{  display: inline-block;
+    width:70px;  height:27px;  color:white;
+    background:#CF7D57;
+    cursor: pointer;
+    text-align: center;
+    line-height: 27px;
+    margin-left: -6px; }
+.top1>div:last-child{width:200px;height: 20px;
+    position: absolute;top:90px;left:802px;
+    overflow: hidden;
+}
+.top>.top1>div:last-child>ul>li{
+    list-style: none;
+    float:left;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.top>.top1>div:last-child>ul{
+    display: inline-block;
+    white-space: nowrap;
+}
+.top>.top1>div:last-child>ul>li>a{color:#CF7D57;text-decoration: none;}
+
+.top2{background:#d14f42; width: 100%;min-width: 1500px;}
+.top2 ul li{
+    display:inline-block;
+    margin-left:-5px;
+}
+.top2 ul li a{color: #eee5d4;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    background: url("../images/topnav_bg.png") no-repeat center;
+}
+.top2 ul li a:hover{ background:#888888;}
+.top3{
+    width: 1000px;
+    margin:0 auto;
+    white-space: nowrap;
+}
+/*======================================================================================================================================*/
+/*轮播*/
+.carousel{ width:100%; height:550px;}
+.carousel-indicators>li{
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #5A5959; cursor: pointer;
+    margin-left:17px;
+}
+.carousel-item>img{
+    width:100%;height: 550px;
+}
+
+    /*最大DIV*/
+.cont{  width:100%;  height:1300px; }
+.cont_cw,.cont_bw{
+    width:1000px;
+    height: 320px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin:0 auto;  }
+.cont_cw1,.cont_cw3{width:652px;  height: 316px;  }
+.cont_cw2,.cont_cw4{width:330px; height: 316px;  margin-left:16px;}
+.cont_top{width:652px;  height: 24px;  }
+/*全体(通用)*/
+div.cont_top>span:nth-child(2),
+div.cont_cw2>div:first-child>span:nth-child(2),
+div.cont_cw3>div:first-child>span:nth-child(2),
+div.cont_cw4>div:first-child>span:nth-child(2),
+div.cont_bw1>div:first-child>span,
+div.cont_bw2>div:first-child>span,
+div.cont_bw3>div:first-child>span,
+div.cont_bw4>div:first-child>span,
+div.cont_bw5>div:first-child>span,
+div.cont_bw6>div:first-child>span
+{font-size:18px;font-weight: bold;margin-left:10px;}
+/*全体(通用)*/
+div.cont_top>span:last-child>a,
+div.cont_cw2>div:first-child>span:last-child>a,
+div.cont_cw3>div:first-child>span:last-child>a
+{  text-decoration: none;color:#333333;float: right;font-size:14px;margin-top:4px;}
+/*全体(通用)*/
+div.cont_top>span:last-child>a:hover,
+div.cont_cw2>div:first-child>span:last-child>a:hover,
+div.cont_cw3>div:first-child>span:last-child>a:hover
+{  color:red;}
+/*影视动态、新闻资讯*/
+    /*图片中的文字。。第1个*/
+div.cont_bottom>ul>li{list-style: none;float: left;position: relative;}
+div.cont_bottom>ul>li:first-child>div{position: absolute;opacity: 0;top:0px;left:-35px;width:290px;height:250px;background:black;text-align: justify;}
+div.cont_bottom>ul>li:first-child>div>span{position: absolute;color:white;font-size: 12px;left:16px;top:16px;right:16px;line-height: 23px;}
+div.cont_bottom>ul>li:first-child>div:hover{opacity: 0.8;cursor: pointer;}
+    /*图片中的文字。。第2个和第3个*/
+div.cont_bottom>ul>li:nth-child(2)>div,
+div.cont_bottom>ul>li:nth-child(3)>div
+{position: absolute;opacity: 0;top:0px;width:175px;height:125px;background:black;text-align: justify;}
+div.cont_bottom>ul>li:nth-child(2)>div>span,
+div.cont_bottom>ul>li:nth-child(3)>div>span
+{position: absolute;color:white;font-size:8px;left:12px;top:10px;right:12px;line-height: 16px;}
+div.cont_bottom>ul>li:nth-child(2)>div:hover,
+div.cont_bottom>ul>li:nth-child(3)>div:hover
+{opacity: 0.8;cursor: pointer;}
+    /*图片中的文字。。第4个*/
+div.cont_bottom>ul>li:last-child>div{position: absolute;opacity:0;top:0px;width:352px;height:123px;background:black;text-align: justify;}
+div.cont_bottom>ul>li:last-child>div>span{position: absolute;color:white;font-size: 12px;left:16px;top:5px;right:16px;line-height: 23px;}
+div.cont_bottom>ul>li:last-child>div:hover{opacity: 0.8;cursor: pointer;}
+    /*图片*/
+    div.cont_bottom>ul>li:first-child>img{margin-left:-35px;margin-right:2px;height:250px;}
+    div.cont_bottom>ul>li:nth-child(2)>img{margin-right:2px;}
+    div.cont_bottom>ul>li:nth-child(4)>img{margin-right:2px;margin-top: 2px;width:352px;height:123px;}
+
+div.cont_cw2>div:last-child>ul{margin-left:-18px;}
+div.cont_cw2>div:last-child>ul>li{font-size:14px;list-style: square; margin-top: 10px;border-bottom: dashed #cecece 1px;padding-bottom: 5px;}
+div.cont_cw2>div:last-child>ul>li>a{text-decoration: none;color:#595757;}
+div.cont_cw2>div:last-child>ul>li>a:hover{color:red;}
+div.cont_cw2>div:last-child>ul>li>span{float: right;
+    display:block;
+    width: 47px;
+    height: 20px;
+    background:#794BB1;
+    color: #fff;
+    font: normal 12px/20px Arial;
+    border-radius: 4px;
+    text-align: center;}
+div.cont_cw2>div:last-child>ul>li>span:hover{background:orange;cursor: pointer;}
+/*休闲横店/游客中心*/
+div.cont_cw3>div:last-child>div:first-child>ul>li{background:#d7e8b4;
+    width:370px;height:73px;
+    list-style: none;
+    cursor: pointer;
+    margin-top:10px;
+    margin-left: -32px;  }
+div.cont_cw3>div:last-child>div:first-child>ul>li:hover{background:#7a8769;}
+div.cont_cw3>div:last-child>div:first-child{float: left;}
+div.cont_cw3>div:last-child>div:first-child>ul>li>span{display: block;
+    font-size: 12px;font-weight: normal;margin:-59px -13px 67px 77px;}
+div.cont_cw3>div:last-child>div:last-child{float: left;margin:10px 0 0 0;}
+div.cont_cw4>div:last-child>div{width:60px; height: 80px;float: left;margin-left:45px;margin-top:35px;cursor: pointer;}
+div.cont_cw4>div:last-child>div>p{font-size: 14px;}
+div.cont_cw4>div:last-child>div>p:hover{color:red;}
+/*巾帼文明岗、微电影、虚拟游、横店微媒体、 横店圆明新园、景区承载量(通用)*/
+.cont_bw1,.cont_bw4{width:380px;  height: 260px;margin-top:30px;}
+.cont_bw2,.cont_bw5{width:300px;  height: 260px;margin:30px 0 0 24px; }
+.cont_bw3,.cont_bw6{width:270px;  height: 260px;margin:30px 0 0 24px;}
+/*巾帼文明岗、微电影、虚拟游*/
+.cont_bw1>div:last-child>div{width:110px;  height: 200px;cursor: pointer;float: left;margin-right:30px;margin-left:5px;white-space: nowrap;}
+.cont_bw1>div:last-child>div>p{font-size: 14px;text-align: center;}
+.cont_bw1>div:last-child>div>p:hover{color:red;}
+.cont_bw3>div:last-child>ul>li{list-style: none;margin:-10px 0 0 -35px;padding-bottom:12px;}
+/*横店微媒体、 横店圆明新园、景区承载量*/
+.cont_bw4>div:last-child{margin-left:10px;}
+.cont_bw6>div:last-child>ul>li{color:#7e7e7e;font-size:12px;list-style: none;margin-top:-54px;padding-bottom:14px;white-space: nowrap;}
+.cont_bw6>div:last-child>ul>li>span>b{color: red;}
+.cont_bw6>div:last-child>div>img{margin-top:-16px;}
+
+/*======================================================================================================================================*/
+/*尾部*/
+/*底部第一部分*/
+.bottom_1{  height:25px;text-align: center;}
+/*底部第二部分*/
+.bottom_2{    height:92px;background:#1C1C1C;min-width: 1500px; }
+.bottom_2>ul{list-style: none; width:600px; height:92px;margin:0 auto;white-space: nowrap}
+.bottom_2>ul>li{display:inline-block;margin-top:18px;white-space: nowrap}
+.bottom_2>ul>li>a{color:white;font-size: 12px; margin-left:1px;text-decoration: none;}
+.bottom_2>ul>li:first-child{margin-left:80px;}
+.bottom_2>div:nth-child(2){width:1000px;height:60px;margin: -56px auto;}
+.bottom_2>div:nth-child(2)>p{color:white;font-size: 12px;margin-top: 10px; text-align: center;}
+/*底部第三部分*/
+.bottom_3{ height:62px; background:#2F3032;min-width: 1500px;}
+.bottom_3>div{width:1000px;height:50px;margin: 0 auto;}
+.bottom_3>div>p{color:white;text-align: center;font-size: 12px;line-height: 62px;}
+/*======================================================================================================================================*/

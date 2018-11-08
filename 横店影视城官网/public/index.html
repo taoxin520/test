@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+<script>
+	/*左边休闲横店*/
+	$(document).ready(function($){
+		$('#updown').click(function(){$('html,body').animate({scrollTop: '0px'}, 5000);}); 
+	});
+	/*底部返回顶部按钮*/
+	$(document).ready(function($){
+		$(".my-small").mouseenter(function(){
+				var $img=$(this);
+				var src=$img.attr("data-target");
+				$(".my-big").attr({src});
+			})
+	})
+</script>
+</head>
+<body>
+<!--网页头部-->
+<header>
+    <div class="top">
+        <div class="top1">
+            <div>
+                <a href="index.html"> <img src="images/logo.png" title="横店影视城"></a>
+            </div>
+            <div>
+                <input type="text" placeholder="请输入搜索内容">
+                <p>搜索</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" title="横店影视城">首页</a></li>
+                    <li><a href="register1.html">登录</a></li>
+                    <li><a href="register.html">注册</a></li>
+                    <li><a href="#">[English]</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <!--导航栏-->
+    <div class="top2">
+        <ul class="top3">
+            <li><a href="1、lvyoujingqu.html">旅游景区</a> </li>
+            <li><a href="2、yanyihuodong.html">演艺活动</a> </li>
+            <li><a href="#">剧组服务</a> </li>
+            <li><a href="#">影视片场</a> </li>
+            <li><a href="#">旅游攻略</a> </li>
+            <li><a href="#" title="横店影视城门票/酒店/横店套票预订">在线预订</a> </li>
+            <li><a href="#" title="定制服务" >定制服务</a> </li>
+            <li><a href="#">酒店介绍</a> </li>
+            <li><a href="#">商旅会务</a> </li>
+            <li><a href="#">关于横店</a> </li>
+        </ul>
+    </div>
+</header>
+<!--网页身体-->
+<div id="main">
+    <!--轮播图-->
+    <div id="demo" class="carousel" data-ride="carousel"  data-interval="1000">
+            <!--指示器-->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+            <!--轮播图片-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/lunbo/201806291107451725.jpg" >
+                </div>
+                <div class="carousel-item">
+                    <img src="images/lunbo/201807040913496034.jpg"  >
+                </div>
+                <div class="carousel-item">
+                    <img src="images/lunbo/201807031700125539.jpg" >
+                </div>
+                <div class="carousel-item">
+                    <img src="images/lunbo/201808130920440056.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/lunbo/201808241018382883.jpg" >
+                </div>
+            </div>
+            <!--指示箭头-->
+            <a href="#demo" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#demo" class="carousel-control-next" data-slide="next">
+               <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+     <!--轮播图以下的四个层楼-->
+    <div class="cont">
+        <div style="margin-top:40px;"></div>
+        <!--影视动态、新闻资讯-->
+        <div class="cont_cw">
+            <!--左边：影视动态-->
+            <div class="cont_cw1">
+                <div class="cont_top">
+                    <span><img src="images/1.png"  style="margin-top: -5px;"></span>
+                    <span>影视动态</span>
+                    <span><a href="">更多</a></span>
+                </div>
+                <hr style="border:1px solid #B8B8B8;margin-top:4px;">
+                <div class="cont_bottom">
+                    <ul>
+                        <li>
+                            <img src="images/201808141701125915.jpg" >
+                            <!--图片中的文字。。第一个-->
+                            <div title="《香蜜沉沉烬如霜》发糖福利 灵修夫妇人间初kiss狂撩粉">
+                                <span>&nbsp;&nbsp;&nbsp;《香蜜沉沉烬如霜》发糖福利 灵修夫妇人间初kiss狂撩粉<br>在横店影视城拍摄完成，由完美世界影视携手幸福蓝海，与时代众乐、鲲池影业、重庆盛美联合出品，完美世界影视刘宁工作室承制，改编自知名网络作家“电线”同名小说的唯美古装神话爱情巨制《香蜜沉沉烬如霜》（以下简称《香蜜》）正在江苏卫视幸福剧场火热播出中<br>
+                                查看详情</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/201808141703016992.jpg" >
+                            <!--图片中的文字。。第二个-->
+                            <div title="《如懿传》8月20日腾讯独播 周迅霍建华以眸静诉一生悲欢">
+                                <span>&nbsp;&nbsp;《如懿传》8月20日腾讯独播 周迅霍建华以眸静诉一生悲欢<br>在横店影视城拍摄，由新丽电视出品及发行，周迅、霍建华领衔主演。</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/201808140859577488.jpg">
+                            <!--图片中的文字。。第三个-->
+                             <div title="《夜天子》曝水墨海报 徐海乔霸气回眸宋祖儿温婉执伞">
+                                  <span>&nbsp;&nbsp;《夜天子》曝水墨海报 徐海乔霸气回眸宋祖儿温婉执伞<br>在横店影视城拍摄完成《夜天子》,8月14日腾讯视频全网独播,每周二至周四,20点更新2集,会员提前看下周。<br> 查看详情</span>
+                              </div>
+                        </li>
+                        <li>
+                            <img src="images/201808141534014366.jpg">
+                            <!--图片中的文字。。第四个-->
+                            <div title="《延禧攻略》播出过半 秦岚下线吴谨言升级令嫔">
+                               <span>&nbsp;&nbsp;&nbsp;《延禧攻略》播出过半 秦岚下线吴谨言升级令嫔<br>在横店影视城拍摄完成的清宫励志大剧《延禧攻略》正在爱奇艺热播，目前已播出过半。开播以来，连续22天单日播放量问鼎冠军，最高单日播放量突破5.3亿，截止目前网播量已突破50亿。本周故事更入佳境，人物命运皆开启重大转折。富察皇后（秦岚 饰）下线，娴妃（佘诗曼 饰）问鼎中…<br> 查看详情</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--右边：新闻资讯-->
+            <div class="cont_cw2">
+                <div>
+                    <span><img src="images/2.png" style="margin-top: -5px;"></span>
+                    <span>新闻资讯</span>
+                    <span><a href="">更多</a></span>
+                </div>
+                <hr style="border:1px solid #B8B8B8;margin-top:1px;">
+                <div>
+                    <ul>
+                        <li><a href="#" title="横店影视城旺铺招租公告"> 横店影视城旺铺招租公告</a>
+                            <span> 12-13</span>
+                        </li>
+                        <li>
+                            <a href="#" :title="title">{{title | ellipses(17)}}</a>    <span>08-01</span>
+                        </li>
+                        <li>
+                            <a href="#" title="少儿仙侠剧《十二花仙》高燃开机， “不老男神”关礼杰倾情助阵">少儿仙侠剧《十二花仙》高燃开机， ……</a><span> 08-13</span>
+                        </li>
+                        <li>
+                            <a href="#" title="“文旅融合”，横店发展之道">“文旅融合”，横店发展之道</a>
+                            <span>07-18</span>
+                        </li>
+                        <li>
+                            <a href="#" title="横店马拉松再次入选《浙江省重点培育品牌体育赛事名录库（2018年）》">横店马拉松再次入选《浙江省重点培育……</a><span>07-12</span>
+                        </li>
+                        <li>
+                            <a href="#" title="首届“星空奖”，横店影视城获“最受游客欢迎主题公园”">首届“星空奖”，横店影视城获“最受……</a><span>07-11</span>
+                        </li>
+                        <li>
+                            <a href="#" title="上海到横店低空航线今日试飞成功">上海到横店低空航线今日试飞成功</a>
+                            <span>07-03</span>
+                        </li>
+                    </ul>     
+                </div>
+            </div>
+        </div>
+        <!--休闲横店、游客中心-->
+        <div class="cont_cw">
+            <!--左边：休闲横店-->
+            <div class="cont_cw3">
+                <div>
+                    <span><img src="images/3.png" style="margin-top: -5px;"></span>
+                    <span>休闲横店</span>
+                    <span><a href="">更多</a></span>
+                </div>
+                <hr style="border:1px solid #B8B8B8;margin-top:4px;">
+                <div>
+                    <div>
+                        <ul>
+                            <li class="my-small" data-target="images/201808150837164846.png">
+                                <img src="images/094354.png" style="width:70px;height: 73px;" >
+                                <span >[活动]《延禧攻略》带火拍摄地，横店开启追剧游</span>
+                                <span>[活动]限时5折，横店影视城七夕给你最直接的七夕浪漫</span>
+                            </li>
+                            <li class="my-small" data-target="images/201808150905178939.png">
+                                <img src="images/094355.png" style="width:70px;height: 73px;" >
+                                <span>[休闲] 25米“日景焰火”惊艳亮相，横店玩转次元文化</span>
+                                <span>[休闲] 泡20度清凉矿泉浴，还能无限免费吃冰淇淋</span>
+                            </li>
+                            <li class="my-small" data-target="images/201606270926370991.jpg">
+                                <img src="images/094356.png" style="width:70px;height: 73px;" >
+                                <span>[美食] 明星们在横店都爱吃什么？</span>
+                                <span>[美食] ​横国夜市争霸赛吃遍中华美食</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="images/201808150837164846.png" style="width:260px;height: 239px;" class="my-big">
+                        </a>
+                        <!--<img src="images/201808150905178939.png" style="width:260px;height: 239px;">-->
+                        <!--<img src="images/201606270926370991.jpg" style="width:260px;height: 239px;">-->
+                    </div>
+                </div>
+            </div>
+            <!--右边：游客中心-->
+            <div class="cont_cw4">
+                <div>
+                    <span><img src="images/4.png" style="margin-top: -5px;"></span>
+                    <span>游客中心</span>
+                </div>
+                <hr style="border:1px solid #B8B8B8;margin-top:3px;">
+                <div>
+                    <div>
+                        <img src="images/youke-1.png">
+                        <p>门票预订</p>
+                    </div>
+                    <div>
+                        <img src="images/youke-2.png">
+                        <p>游玩路线</p>
+                    </div>
+                    <div>
+                        <img src="images/youke-3.png">
+                        <p>餐饮住宿</p>
+                    </div>
+                    <div>
+                        <img src="images/youke-4.png">
+                        <p>交通速查</p>
+                    </div>
+                    <div>
+                        <img src="images/youke-5.png">
+                        <p>演出时间</p>
+                    </div>
+                    <div>
+                        <img src="images/youke-6.png">
+                        <p>在线咨询</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--巾帼文明岗、微电影、虚拟游-->
+        <div class="cont_bw">
+            <!--左：巾帼文明岗-->
+            <div class="cont_bw1">
+                <div>
+                    <img src="images/5.png" style="margin-top:-5px;"/>
+                    <span>巾帼文明岗</span>
+                </div>
+                <hr style="border:1px solid #B8B8B8;margin-top:4px;">
+                <div>
+                    <div>
+                        <img src="images/25.png">
+                        <p><b>横店影视旅游</b><br>第213期</p>
+                    </div>
+                    <a href="#"><img src="images/jinguo.jpg"></a>
+                </div>
+            </div>
+            <!--中：微电影-->
+            <div class="cont_bw2">
+                <div>
+                    <img src="images/6.png" style="margin-top:-5px;"/>
+                    <span>微电影</span>
+                </div>
+                <hr style="border:1px solid #B8B8B8;margin-top:4px;">
+                <a href="#"><img src="images/5A_wdy.jpg"></a>
+            </div>
+            <!--右：虚拟游-->
+            <div class="cont_bw3">
+                <div>
+                    <img src="images/7.png" style="margin-top:-5px;"/>
+                    <span>虚拟游</span>
+                </div>
+                <hr style="border:1px solid #B8B8B8;margin-top:4px;">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/5A_xny1.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/5A_xny2.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/5A_xny3.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/5A_xny4.jpg"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--横店微媒体、 横店圆明新园、景区承载量-->
+        <div class="cont_bw">
+            <!--左：横店微媒体-->
+            <div class="cont_bw4">
+                <div>
+                    <img src="images/8.png" style="margin-top:-5px;"/>
+                    <span>横店微媒体</span>
+                </div>
+                <hr style="border:1px solid #B8B8B8;margin-top:4px;">
+                <div><img src="images/5A_wmt.jpg"></div>
+            </div>
+            <!--中：横店圆明新园-->
+            <div class="cont_bw5">
+                <div>
+                    <img src="images/9.jpg" style="margin-top:-5px;"/>
+                    <span>横店圆明新园</span>
+                </div>
+                <hr style="border:1px solid #B8B8B8;margin-top:4px;">
+                <a href=""><img src="images/5A_ymxy.jpg"></a>
+            </div>
+            <!--右：景区承载量-->
+            <div class="cont_bw6">
+                <div>
+                    <img src="images/4.png" style="margin-top:-5px;"/>
+                    <span>景区承载量</span>
+                </div>
+                <hr style="border:1px solid #B8B8B8;margin-top:4px;">
+                <div>
+                    <div><img src="images/5A_czl.jpg"></div>
+                    <ul>
+                        <li><span>明清宫苑景区 <b>72000人次</b></span></li>
+                        <li><span>广州街香港街 <b>40000人次</b></span></li>
+                        <li><span>秦王宫景区 <b>60000人次</b></span></li>
+                        <li><span>梦幻谷景区 <b>60000人次</b></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--网页尾部-->
+  <footer><!--底部总共三部分-->
+    <!--底部第一部分-->
+    <div class="bottom_1">
+        <a href="#" id="updown"><img src="images/gotop.png" ></a>
+    </div>
+    <!--底部第二部分-->
+    <div class="bottom_2">
+        <ul>
+            <li><a href="#">新闻动态&nbsp;&nbsp;|</a> </li>
+            <li><a href="#">合作信息&nbsp;&nbsp; |</a></li>
+            <li><a href="#">人才招聘&nbsp;&nbsp; |</a></li>
+            <li><a href="#">联系我们&nbsp;&nbsp;|</a></li>
+            <li><a href="#">关于我们&nbsp;&nbsp; |</a></li>
+            <li><a href="#">特殊人群服务</a></li>
+        </ul>
+        <div>
+            <p>国家AAAAA级旅游风景区 中国规模最大的影视体验主题公园 拥有20场大型演艺秀的中国旅游演艺之都</p>
+        </div>
+    </div>
+    <!--底部第三部分-->
+    <div class="bottom_3">
+        <div>
+             <p> Copyright &copy; 2017-2020 HengDianWorld.com. 横店影视城 版权所有 客户电话（咨询预订）：4009999141(0579-86547211) 浙ICP备11042917号</p>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="js/vue.js"></script>
+	<script>
+		/*Vuejs引用*/
+		Vue.filter("ellipses",function(val,len){
+				return val.slice(0,len)+"..."
+		});
+		new Vue({
+			el:"#main",
+			data:{
+        title:"艾蒂亚大会专访丨殷旭：5年后，横店游客3000万"
+			}
+		})
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{margin:0;padding:0;}
+/*底部第一部分*/
+.bottom_1{  height:25px;  text-align: center;  }
+/*底部第二部分*/
+.bottom_2{    height:92px;background:#1C1C1C; }
+.bottom_2>ul{list-style: none; width:600px; height:92px;margin:0 auto;white-space: nowrap}
+.bottom_2>ul>li{display:inline-block;margin-top:18px;white-space: nowrap}
+.bottom_2>ul>li>a{color:white;font-size: 12px; margin-left:1px;text-decoration: none;}
+.bottom_2>ul>li:first-child{margin-left:80px;}
+.bottom_2>ul>p{color:white;font-size: 12px;margin-top: 10px; }
+/*底部第三部分*/
+.bottom_3{ height:62px; background:#2F3032;}
+.bottom_3>p{color:white;text-align: center;font-size: 12px;line-height: 62px;}
